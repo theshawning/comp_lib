@@ -11,21 +11,29 @@
     margin-right: auto;
   }
 
-  &__menu-burger {
+  &__menu-btn {
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-right: 10px;
+    cursor: pointer;
+  }
+
+  &__menu-burger {
     width: 30px;
-    height: 3px;
-    border-radius: 5px;
+    height: 4px;
+    border-radius: 3px;
     background-color: #fff;
     
     &::before,
     &::after {
       content: '';
       position: absolute;
-      margin-right: 10px;
       width: 30px;
-      height: 3px;
-      border-radius: 5px;
+      height: 4px;
+      border-radius: 3px;
       background-color: #fff;
     }
 

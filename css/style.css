@@ -26,21 +26,35 @@
   margin-right: auto;
 }
 
-.navbar__menu-burger {
+.navbar__menu-btn {
+  height: 35px;
+  width: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-right: 10px;
+  cursor: pointer;
+}
+
+.navbar__menu-burger {
   width: 30px;
-  height: 3px;
-  border-radius: 5px;
+  height: 4px;
+  border-radius: 3px;
   background-color: #fff;
 }
 
 .navbar__menu-burger::before, .navbar__menu-burger::after {
   content: '';
   position: absolute;
-  margin-right: 10px;
   width: 30px;
-  height: 3px;
-  border-radius: 5px;
+  height: 4px;
+  border-radius: 3px;
   background-color: #fff;
 }
 
