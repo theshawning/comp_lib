@@ -1,25 +1,25 @@
+// NAVBAR-1
 .navbar {
   display: flex;
   align-items: center;
-  position: absolute;
 
-  height: 10vh;
+  height: 2.8125rem;
   width: 100%;
 
   &__menu-btn {
-    height: 35px;
-    width: 35px;
+    height: 2.1875rem;
+    width: 2.1875rem;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: auto;
-    margin-right: 10px;
+    margin-right: .625rem;
     cursor: pointer;
   }
 
   &__menu-burger {
-    width: 30px;
-    height: 4px;
+    width: 1.875rem;
+    height: .25rem;
     border-radius: 3px;
     background-color: #fff;
     
@@ -27,18 +27,72 @@
     &::after {
       content: '';
       position: absolute;
-      width: 30px;
-      height: 4px;
+      width: 1.875rem;
+      height: .25rem;
       border-radius: 3px;
       background-color: #fff;
     }
 
     &::before {
-      transform: translateY(-10px);
+      transform: translateY(-.625rem);
     }
 
     &::after {
-      transform: translateY(10px);
+      transform: translateY(.625rem);
+    }
+  }
+}
+
+// NAVBAR-2
+.navbar-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 2.8125rem;
+  width: 100%;
+
+  a {
+    display: flex;
+    align-items: center;
+    background-color: $pink-primary;
+    color: $grey-dark-1;
+    height: 100%;
+    padding: 0 .625rem;
+  }
+
+  &__menu-btn {
+    height: 2.1875rem;
+    width: 2.1875rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: .625rem;
+    cursor: pointer;
+  }
+
+  &__menu-burger {
+    width: 1.875rem;
+    height: .25rem;
+    border-radius: 3px;
+    background-color: #fff;
+    
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      width: 1.875rem;
+      height: .25rem;
+      border-radius: 3px;
+      background-color: #fff;
+    }
+
+    &::before {
+      transform: translateY(-.625rem);
+    }
+
+    &::after {
+      transform: translateY(.625rem);
     }
   }
 }
