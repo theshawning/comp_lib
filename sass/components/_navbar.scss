@@ -1,0 +1,31 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  position: absolute;
+
+  height: 10vh;
+  width: 100%;
+
+  & p {
+    margin-left: 10px;
+    margin-right: auto;
+  }
+
+  &__menu {
+    display: block;
+    margin-right: 10px;
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background-color: #fff;
+    transform-origin: 4px 0px;
+
+    & span:first-child {
+      transform-origin: 0% 0%;
+    }
+
+    & span:nth-last-child(2) {
+      transform-origin: 0% 100%;
+    }
+  }
+}
