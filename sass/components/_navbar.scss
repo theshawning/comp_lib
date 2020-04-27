@@ -53,12 +53,7 @@
   width: 100%;
 
   a {
-    display: flex;
-    align-items: center;
-    background-color: $pink-primary;
-    color: $grey-dark-1;
-    height: 100%;
-    padding: 0 .625rem;
+    display: none;
   }
 
   &__menu-btn {
@@ -93,6 +88,49 @@
 
     &::after {
       transform: translateY(.625rem);
+    }
+  }
+}
+
+.menu-open {
+  display: flex;
+}
+
+@media only screen and (min-width: 900px) {
+  .navbar-2 {
+    &__menu-btn,
+    &__menu-burger {
+      display: none;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      background-color: $pink-primary;
+      color: whitesmoke;
+      text-transform: uppercase;
+      height: 100%;
+      padding: 0 .625rem;
+    }
+
+    .end {
+      margin-right: .625rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .navbar-2 {
+    a {
+      padding: 0 1rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .navbar-2 {
+    a {
+      padding: 0 1.5rem;
     }
   }
 }
