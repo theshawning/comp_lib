@@ -26,24 +26,31 @@
   margin-right: auto;
 }
 
-.navbar__menu {
-  display: block;
+.navbar__menu-burger {
   margin-right: 10px;
   width: 30px;
-  height: 4px;
-  border-radius: 3px;
+  height: 3px;
+  border-radius: 5px;
   background-color: #fff;
-  -webkit-transform-origin: 4px 0px;
-          transform-origin: 4px 0px;
 }
 
-.navbar__menu span:first-child {
-  -webkit-transform-origin: 0% 0%;
-          transform-origin: 0% 0%;
+.navbar__menu-burger::before, .navbar__menu-burger::after {
+  content: '';
+  position: absolute;
+  margin-right: 10px;
+  width: 30px;
+  height: 3px;
+  border-radius: 5px;
+  background-color: #fff;
 }
 
-.navbar__menu span:nth-last-child(2) {
-  -webkit-transform-origin: 0% 100%;
-          transform-origin: 0% 100%;
+.navbar__menu-burger::before {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.navbar__menu-burger::after {
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
 }
 /*# sourceMappingURL=style.css.map */
